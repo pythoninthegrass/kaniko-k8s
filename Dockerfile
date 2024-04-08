@@ -9,5 +9,9 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+WORKDIR /app
+
+COPY hello.py .
+
 ENTRYPOINT [ "python3" ]
-CMD [ "-c", "print('Hello, World!')"]
+CMD [ "hello.py"]

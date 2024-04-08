@@ -1,0 +1,4 @@
+.gitignore
+**/*.md
+Dockerfile
+Jenkinsfile
